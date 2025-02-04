@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html5 Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h4>Payment form example</h4>
+        </div>
+
+        <div class="container">
+
+            <div class="alert alert-danger" role="alert">
+                Some fileds are missing
+            </div>
+
+            <div class="row g-3 d-flex">
+
+                <div class="col-5">
+                    <label class="form-label" for="Card">Card #</label>
+                    <input class="form-control" type="text" name="Card" id="Card" placeholder="XXXXXXXXXXXXXXXX">
+                </div>
+                <div class="col-3">
+                    <label class="form-label" for="Card">CVC #</label>
+                    <input class="form-control" type=" text" name="Card" id="Card" placeholder="0000">
+                </div>
+                <div class="col-4">
+                    <label class="form-label" for="Card">Amount</label>
+                    <input class="form-control" type=" text" name="Card" id="Card" placeholder="Amount">
+                </div>
+
+            </div>
+
+            <div class="row g-3 d-flex">
+                <div class="col-6">
+                    <label class="form-label" for="First-name">First Name</label>
+                    <input class="form-control" type=" text" name="First-name" id="First-name" placeholder="">
+
+                    <label class="form-label" for="City">City</label>
+                    <input class="form-control" type=" text" name="City" id="City" placeholder="">
+
+
+                    <p>We accept:</p>
+                    <div class="col-5 ps-3 bg-secondary">
+
+                        
+
+                        <div class="form-check  form-check-inline">
+                            <label class="form-check-label" for="uno">
+                                <i class="fa-brands fa-cc-mastercard logos"></i>
+                            </label>
+                            <input class="form-check-input" type="radio" name="TypeCard" id="uno">
+                        </div>
+                        <div class="form-check  form-check-inline">
+                            <label class="form-check-label" for="dos">
+                                <i class="fa-brands fa-cc-visa logos"></i>
+                            </label>
+                            <input class="form-check-input" type="radio" name="TypeCard" id="dos">
+                        </div>
+                        <div class="form-check  form-check-inline">
+                            <label class="form-check-label" for="tres">
+                                <i class="fa-brands fa-cc-diners-club logos"></i>
+                            </label>
+                            <input class="form-check-input" type="radio" name="TypeCard" id="tres">
+                        </div>
+                        <div class="form-check  form-check-inline">
+                            <label class="form-check-label" for="cuatro">
+                                <i class="fa-brands fa-cc-paypal logos"></i>
+                            </label>
+                            <input class="form-check-input" type="radio" name="TypeCard" id="cuatro">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="last-name">Last Name</label>
+                    <input class="form-control" type="text" name="First-name" id="last-name" placeholder="">
+
+                    <div class="row d-flex g-3">
+                        <div class="col-6">
+                            <label class="form-label" for="state">State</label>
+                            <input class="form-control" type=" text" name="state" id="state" placeholder="">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="postal">Postal</label>
+                            <input class="form-control" type="text" name="Postal" id="postal">
+                        </div>
+                    </div>
+                    <label class="form-label" for="messsage">Messsage</label>
+                    <textarea class="form-control" name="messsage" id="messsage"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex g-3">
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="reset" class="btn btn-secondary">
+                    Cancel
+                </button>
+
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
